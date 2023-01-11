@@ -9,18 +9,12 @@
 </head>
 <body>
     <h1>My Page - Ajax</h1>
-    <button>CARGAR USUARIOS</button>
+    <button id="loadUsers">CARGAR USUARIOS</button>
     <h3>Lista de usuarios</h3>
-    <ul>
+    <ul id="usersList">
         <!-- li por cada usuario obtenido de https://jsonplaceholder.typicode.com/users -->
     </ul>
 
-    <script>
-        const urlApi = 'https://jsonplaceholder.typicode.com/users'
-
-        $.get(urlApi, (response) => {
-            console.log(response)
-        })
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>
